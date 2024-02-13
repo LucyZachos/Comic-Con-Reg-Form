@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comic Con</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+                <div class="container">
+                    <h2 >Kimiko Entertainment Presents:</h2><br>
+                    <h1>Comic Con</h1><br><br>
+                    <h3 class="form-title">REGISTER</h3><br>
+                    <form action="register.php" name="register" method="POST">
+                        
+                    <!-- container for inputs to section them off -->
+                    <div class="user-info">
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's first name -->
+                            <label for="first_name" class="label">First Name: </label>
+                            <input type="text" id="first_name" name="first_name" required>
+                        </div>
+                    
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's last name -->
+                            <label for="last_name">Last Name: </label>
+                            <input type="text" id="last_name" name="last_name" required>
+                        </div>
+                    
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's cellphone number -->
+                            <label for="cellphone">Cellphone: </label>
+                            <input type="tel" id="cellphone" name="cellphone">
+                        </div>
+                    
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's email address -->
+                            <label for="email">Email Address: </label>
+                            <input type="email" id="email" name="email"  required>
+                        </div>
+                    
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's password -->
+                            <label for="passwrd">Password: </label>
+                            <!-- Set to password type to hide user input -->
+                            <input type="password" id="passwrd" name="passwrd" required>
+                        </div>
+                    
+                        <div class="user-input-box">
+                            <!-- Label and input for the user's password -->
+                            <label for="fav_comic">Favourite Comic: </label>
+                            <input type="text" id="fav_comic" name="fav_comic">
+                        </div>
+                    </div>
+
+                        <!-- dropdown options for province -->
+                        <div class="province-box">
+                            <label for="province">Province:</label>
+                            <select class="dropdown" name="province">
+                                <option value="Eastern Cape">Eastern Cape</option>
+                                <option value="Free State">Free State</option>
+                                <option value="Gauteng">Gauteng</option>
+                                <option value="Kwazulu-Natal">Kwazulu-Natal</option>
+                                <option value="Limpopo">Limpopo</option>
+                                <option value="Mpumalanga">Mpumalanga</option>
+                                <option value="North-West">North-West</option>
+                                <option value="Northern Cape">Northern Cape</option>
+                                <option value="Western Cape">Western Cape</option>
+                            </select>
+                        </div><br>
+
+                        <!-- radio buttons for gender-->
+                        <div class="gender-details-box">
+                            <span class="gender-title">Gender</span>
+                            <div class="gender-type">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label>
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                            </div>
+                        </div><br>
+
+                        <!-- registration button -->                            
+                        <div class="submit-btn">
+                            <input type="submit" class="button" name="register" id="button" value="REGISTER NOW">
+                        </div> <br>               
+                        </div>
+                </div>
+        </form>
+</body>
+</html>

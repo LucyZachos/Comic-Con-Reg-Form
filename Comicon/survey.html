@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Comic Con</title>
+        <link rel="stylesheet" href="style-survey.css">
+    </head>
+
+    <body>
+        
+                <div class="container">
+                    <h2 >Kimiko Entertainment Presents:</h2>
+                    <h1>Comic Con</h1>
+                    <h3 class="form-title">Survey</h3>
+
+                    <div class="user-info">
+
+                        <!-- radio buttons for question 1-->
+                            <br><span class="q1">Have you attended a Comic Con before?</span>
+                            <div class="q1">
+                                <input type="radio" name="q1" id="yes" checked>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="q1" id="no">
+                                <label for="no">No</label>
+                        </div>
+
+                        <!-- radio buttons for question 2-->
+                        <br><span class="q2">Do you plan on attending Comic Con next year?</span>
+                            <div class="q2">
+                                <input type="radio" name="q2" id="yes" checked>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="q1" id="no">
+                                <label for="no">No</label>
+                        </div>
+
+                        <!-- radio buttons for question 3-->
+                            <br><span class="q3">Do you cosplay?</span>
+                            <div class="q3">
+                                <input type="radio" name="q3" id="yes" checked>
+                                <label for="yes">Yes</label>
+                                <input type="radio" name="q1" id="no">
+                                <label for="no">No</label>
+                        </div>
+                    
+                        <!-- dropdown options for province - question 4 -->
+                        <br><label for="province">Which province are you from?</label><br>
+                        <select class="dropdown" name="province">
+                            <option value="Eastern Cape">Eastern Cape</option>
+                            <option value="Free State">Free State</option>
+                            <option value="Gauteng">Gauteng</option>
+                            <option value="Kwazulu-Natal">Kwazulu-Natal</option>
+                            <option value="Limpopo">Limpopo</option>
+                            <option value="Mpumalanga">Mpumalanga</option>
+                            <option value="North-West">North-West</option>
+                            <option value="Northern Cape">Northern Cape</option>
+                            <option value="Western Cape">Western Cape</option>
+                        </select><br>
+
+                    <!-- dropdown options for age group - question 5 -->
+                        <br><label for="age-group">Please select your age group:</label><br>
+                        <select class="dropdown" name="age-group">
+                            <option value="Under 12 years">Under 12 years</option>
+                            <option value="12 - 17 years">12 - 17 years</option>
+                            <option value="18 -24 years">18 -24 years</option>
+                            <option value="25 - 34 years">25 - 34 years</option>
+                            <option value="35 - 44 years">35 - 44 years</option>
+                            <option value="45 - 54 years">45 - 54 years</option>
+                            <option value="55 - 64 years">55 - 64 years</option>
+                            <option value="65 - 74 years">65 - 74 years</option>
+                            <option value="75 years or older">75 years or older</option>
+                        </select><br>
+
+                            <!-- question 6 -->
+                            <br><label for="q6">What is your favourite part of Comic Con?</label><br>
+                            <textarea id="q6" name="q6"></textarea><br>
+                    
+                            <!-- question 7-->
+                            <br><label for="q7">Who would you love to see on the panel at the next Comic Con?</label><br>
+                            <textarea id="q7" name="q7"></textarea><br>
+
+                            <!-- question 9-->
+                            <div class="feedback-box">
+                                <br><label for="q9">Is there anything you think we can improve on?</label><br>
+                                <textarea id="q9" name="q9"></textarea><br>
+                        </div>
+
+                            <!-- question 8-->
+                            <br><label for="q8">How did you hear about us?</label><br>
+                            <input type="checkbox" id="q8" name="op1" value="A friend">
+                            <label for="op1"> A friend</label><br>
+                            <input type="checkbox" id="q8" name="op2" value="Google">
+                            <label for="op2"> Google</label><br>
+                            <input type="checkbox" id="q8" name="op3" value="Social Media">
+                            <label for="op3">Social Media</label><br>
+
+                        <!-- submit  button -->                            
+                        <div class="submit-btn">
+                            <br> <input type="submit" class="button" name="feedback" id="button" value="Submit Feedback">
+                        </div> <br>                    
+                        </div>
+                </div>
+        </form>
+</body>
+</html>
